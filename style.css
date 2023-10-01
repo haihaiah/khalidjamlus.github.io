@@ -1,3 +1,69 @@
 body {
   font-family: 'poppins', sans-serif;
 }
+
+.navbar {
+  background: linear-gradient(to right, #aec7cc, #bdb7bb);
+}
+.home-text h1 {
+  background: linear-gradient(to right, rgb(102, 3, 102), rgb(122, 39, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .box {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flexbox;
+} */
+
+.jumbotron {
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+  background-image: url(profil-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.home-img {
+  justify-content: center;
+  width: 350px;
+  height: auto;
+}
+
+@media (max-width: 1820px) {
+  .home-img {
+    height: 350px;
+    width: 350px;
+    display: block;
+  }
+  .home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1490px) {
+  .home-img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .jumbotron {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .home-text {
+    order: 2;
+    width: 100%;
+  }
+}
