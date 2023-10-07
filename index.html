@@ -14,22 +14,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet" />
     <!-- End Poppins -->
 
+    <!-- Font Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- End Nunito -->
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css"/>
     <!-- End CSS -->
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><b>Khalid</b> <b style="color: rgb(175, 36, 255);">Jamlus.</b></a>
+    <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
+      <div class="container" style="font-family: 'Nunito', sans-serif;">
+        <a class="navbar-brand" href="#"><b style="color: rgb(186, 52, 212);">Khalid</b> <b style="color: rgb(65, 65, 65);">Jamlus.</b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home </a>
+              <a class="nav-link active" aria-current="page" href="#home">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skill">Skill</a>
@@ -37,31 +43,8 @@
             <li class="nav-item">
               <a class="nav-link" href="#Figure">Example</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-                <button class="btn nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme value="light">
-                      <i class="bi bi-sun-fill m-2 opacity-50" data-theme-icon ="bi-sun-fill"></i>light
-                      </button> 
-                  </li>
-                  <li>
-                    <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme value="dark">
-                      <i class="bi bi-moon-stars-fill m-2 opacity-50" data-theme-icon ="bi-moon-stars-fill"></i>dark
-                      </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme value="dark">
-                      <i class="bi bi-circle-half m-2 opacity-50" data-theme-icon ="bi-circle-half"></i>auto
-                      </button>
-                  </li>
-                </ul>
-              </div>
+            <li class="contact-box nav-item">
+              <a class="nav-link text-light" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -70,71 +53,88 @@
     <!-- End Navbar -->
 
     <!-- jumbotron -->
-    <section class="jumbotron text-white text-center text-sm-start shadow">
+    <section class="jumbotron text-white text-center text-sm-start shadow" id="home">
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
+        <div class="box-blur d-sm-flex align-items-center justify-content-between">
+          <img class="home-img" src="image/profil.png" alt="profil"/>
           <div class="home-text">
-            <h1>Hello Friend,<b> I'am Khalid</b></h1>
-            <p class="box lead my-4 ">
+            <h1 style="font-family: 'Nunito', sans-serif;">Hello Friend,<b> I'am Khalid</b></h1>
+            <p class="box lead my-2 text-dark" style="font-family: 'Nunito', sans-serif;">
               Hello friends my name is Khalid Jamlus Atthoba, welcome to my portfolio <br>website, please scroll down to see more about my skills. You can download <br>my resume on the button below.
             </p>
+          <div class="prop">
             <button class="btn btn-dark shadow" style="border-radius: 5rem; background-color: rgb(100, 57, 255);border: none;">Download CV</button>
             <button class="btn btn-dark shadow" style="border-radius: 5rem; background-color: rgb(192, 192, 192);border: none;margin-left: 5px;">Graphic Design</button>
             <button class="btn btn-dark shadow" style="border-radius: 5rem; background-color: rgb(192, 192, 192);border: none;margin-left: 5px;">UI UX</button>
             <button class="btn btn-dark shadow" style="border-radius: 5rem; background-color: rgb(192, 192, 192);border: none;margin-left: 5px;">Electrical Design</button>
           </div>
-        <div>
-          <img class="home-img" src="image/profil.png" alt="profil"/>
-        </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- End Jumbotron -->
 
+    <!-- Grid -->
+    <!-- <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">Figma</h2>
+          <p class="subheading">it is my skill and my project</p>
+        </div>
+        <div class="hero-2">
+          <h2 class="heading">CorelDraw</h2>
+          <p class="subheading">it is my skill and my project</p>
+        </div>
+        <div class="feature feature-1">Figma</div>
+        <div class="feature feature-2">CorelDraw</div>
+      </header>
+    </div> -->
+    <!-- End Grid -->
+
     <!-- Card -->
     <section id="skill" class="p-5">
-      <div class="container">
-        <div class="row text-center g-4">
-          <h1><b>My Skills</b></h1>
-          <div class="col-md">
-            <div class="card bg-dark text-white shadow">
+      <div class="container text-center pb-3">
+        <h1><b>My Skills</b></h1>
+        <div class="row text-center">
+          <div>
+            <div class="card-1 text-white shadow">
               <div class="card-body">
                 <img src="image/Figma.png" width="100px" alt="Figma" />
                 <h3 class="card-title mb-3">Figma</h3>
                 <p class="card-text">
                   Figma merupakan software yang saya gunakan untuk mendesain subuah UI (user interface/ tampilan) pada sebuah website, dan aplikasi.
                 </p>
-                <a href="https://www.figma.com/@khalidme" class="btn btn-light">Click to My Portfolio</a>
+                <a href="figma.html" class="btn btn-light">Click to My Portfolio</a>
               </div>
             </div>
           </div>
           <!-- inventor -->
-          <div class="col-md">
-            <div class="card bg-light text-dark shadow">
+          <div>
+            <div class="card-2 bg-light text-light shadow">
               <div class="card-body">
                 <img src="image/Inventor.png" width="90px" alt="Figma" />
                 <h3 class="card-title mb-3">Autodesk Inventor</h3>
-                <p class="card-text">Autodesk Infentor, software 3d yang saya gunakan sebagai alat untuk membuat kerangka / body dalam pembuatan robot, pengalaman saya menggunakan software ini sudah 3 tahun</p>
+                <p class="card-text">Autodesk Infentor, software 3d yang saya gunakan sebagai alat untuk membuat kerangka / body dalam pembuatan robot.</p>
                 <a href="https://grabcad.com/khalid.jamlus.atthoba-1/models" class="btn btn-primary">Click to My Portfolio</a>
               </div>
             </div>
           </div>
           <!-- Corel -->
-          <div class="col-md">
-            <div class="card bg-success text-white shadow">
+          <div>
+            <div class="card-3 text-white shadow">
               <div class="card-body">
                 <img src="image/Corel.png" width="120px" alt="Figma" />
                 <h3 class="card-title mb-3">Corledraw</h3>
                 <p class="card-text">
-                  Coreldraw mungkin dari kalian tidak asing dengan software ini, Coreldraw merupakan software untuk membuat desain grafis seperti logo, poster, dan desain grafis lainya, saya sudah emnggunakan software ini selama 1 tahun
+                 Coreldraw merupakan sebuah software yang digunakan untuk membuat desain grafis seperti logo, poster, dan desain grafis lainya.
                 </p>
                 <a href="#" class="btn btn-primary">Click to My Portfolio</a>
               </div>
             </div>
           </div>
           <!-- Photoshop -->
-          <div class="col-md">
-            <div class="card bg-primary text-white">
+          <div>
+            <div class="card-4 text-white shadow">
               <div class="card-body">
                 <img src="image/Photoshop.png" width="90px" alt="Figma" />
                 <h3 class="card-title mb-3">Adobe Photoshop</h3>
@@ -145,33 +145,46 @@
               </div>
             </div>
           </div>
+          <!-- HTML -->
+          <div>
+            <div class="card-5 text-white shadow">
+              <div class="card-body">
+                <img src="image/html.png" width="80px" alt="Figma" />
+                <h3 class="card-title mb-3">HTML</h3>
+                <p class="card-text">
+                  HTML adalah bahasa markup standar untuk membuat halaman website. Bahasa ini berfungsi untuk membuat struktur website hingga menyusun format teks dan gambar pada halaman web.
+                </p>
+                <a href="#" class="btn btn-light">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <!-- css -->
+          <div>
+            <div class="card-6 text-white shadow">
+              <div class="card-body">
+                <img src="image/css.png" width="80px" alt="Figma" />
+                <h3 class="card-title mb-3">CSS</h3>
+                <p class="card-text">
+                  CSS berfungsi untuk menjelaskan dan menata tampilan elemen yang tertulis pada bahasa markup HTML. Dalam arti lain, CSS-lah yang menjelaskan bagaimana elemen HTML di balik layar ditampilkan.
+                </p>
+                <a href="#" class="btn btn-light">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
           <!-- Eadyeda -->
-          <div class="col-md">
-            <div class="card bg-primary text-white shadow">
+          <div>
+            <div class="card-7 text-white shadow">
               <div class="card-body">
                 <img src="image/Easyeda.png" width="80px" alt="Figma" />
                 <h3 class="card-title mb-3">EasyEDA</h3>
                 <p class="card-text">
-                  EasyEDA bisa disebut software desain untuk alat elektronika seperti halnya pembuatan pcb, hingga proses pencetakan sampai menjadi sebuah pcb yang siap di gunakan. pengalaman dengan software ini 1 tahun
+                  EasyEDA bisa disebut software desain untuk alat elektronika seperti halnya pembuatan pcb, hingga proses pencetakan sampai menjadi sebuah pcb yang siap di gunakan.
                 </p>
                 <a href="#" class="btn btn-light">Click to My Portfolio</a>
               </div>
             </div>
           </div>
-          <!-- Eagle -->
-          <div class="col-md">
-            <div class="card bg-warning text-dark shadow">
-              <div class="card-body">
-                <img src="image/Eagle.png" width="50px" alt="Figma" />
-                <h3 class="card-title mb-3">Autodesk Eagle</h3>
-                <p class="card-text">
-                  Autodesk Eagle, sama halnya dengan EasyEDA software desain elektronika, software ini di buat oleh pihak Autodek Corp.
-                </p>
-                <a href="#" class="btn btn-light">Click to My Portfolio</a>
-              </div>
-            </div>
-          </div>
-      </div>
+        </div>
     </section>
     <!-- End Card -->
     <!-- Figure -->
@@ -198,8 +211,8 @@
     </section>
     <!-- End Figure -->
     <!-- From -->
-    <div class="row justify-content-center">
-      <div class="col-md-6" style="padding-top: 3rem; padding-bottom: 3rem;">
+    <div class="row-1 justify-content-center" id="contact">
+      <div class="col-md-4" style="padding-top: 3rem; padding-bottom: 3rem;">
         <h2 class="text-center"><b>Contact Me</b></h2>
         <form>
           <div class="mb-3">
@@ -226,92 +239,5 @@
     <!-- End Footer -->
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <!-- <script>
-      /*!
- * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under the Creative Commons Attribution 3.0 Unported License.
- */
-
-(() => {
-  'use strict'
-
-  const getStoredTheme = () => localStorage.getItem('theme')
-  const setStoredTheme = theme => localStorage.setItem('theme', theme)
-
-  const getPreferredTheme = () => {
-    const storedTheme = getStoredTheme()
-    if (storedTheme) {
-      return storedTheme
-    }
-
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  }
-
-  const setTheme = theme => {
-    if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-bs-theme', 'dark')
-    } else {
-      document.documentElement.setAttribute('data-bs-theme', theme)
-    }
-  }
-
-  setTheme(getPreferredTheme())
-
-  const showActiveTheme = (theme, focus = false) => {
-    const themeSwitcher = document.querySelector('#bd-theme')
-
-    if (!themeSwitcher) {
-      return
-    }
-
-    const themeSwitcherText = document.querySelector('#bd-theme-text')
-    const activeThemeIcon = document.querySelector('.theme-icon-active')
-    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-    const iconOfActiveBtn = btnToActive.querySelector('i').dataset.themeIcon
-
-    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-      element.classList.remove('active')
-      element.setAttribute('aria-pressed', 'false')
-    })
-
-    btnToActive.classList.add('active')
-    btnToActive.setAttribute('aria-pressed', 'true')
-    activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive)
-    activeThemeIcon.classList.add(iconOfActiveBtn)
-    activeThemeIcon.dataset.iconOfActive = iconOfActiveBtn
-    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
-    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
-
-    if (focus) {
-      themeSwitcher.focus()
-    }
-  }
-
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    const storedTheme = getStoredTheme()
-    if (storedTheme !== 'light' && storedTheme !== 'dark') {
-      setTheme(getPreferredTheme())
-    }
-  })
-
-  window.addEventListener('DOMContentLoaded', () => {
-    showActiveTheme(getPreferredTheme())
-
-    document.querySelectorAll('[data-bs-theme-value]')
-      .forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
-          setStoredTheme(theme)
-          setTheme(theme)
-          showActiveTheme(theme, true)
-        })
-      })
-  })
-})()
-    </script> -->
-    <!-- End Bootstrap -->
-
   </body>
 </html>
