@@ -7,9 +7,14 @@ body {
   background: rgba(217, 217, 217, 0.55);
   box-shadow: 1px 1px 5px 0px rgba(255, 255, 255, 0.3) inset, 0px 8px 24px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(12.5px);
+  justify-content: space-between;
+}
+
+.mid-nav {
+  justify-items: center;
 }
 .contact-box {
-  background: linear-gradient(rgb(172, 110, 243), rgb(32, 121, 255));
+  background-color: rgb(126, 59, 235);
   border-radius: 3rem;
   padding-left: 3px;
   padding-right: 3px;
@@ -38,26 +43,36 @@ body {
   background-position: center;
   display: flex;
 }
-.row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  font-size: 15px;
-  gap: 4px;
+
+.judul {
+  background-image: url(image/heder.png);
+  background-size: contain;
+  background-position: center;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.row h3 {
+.container-1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  font-size: 15px;
+  gap: 5px;
+}
+
+.container-1 h3 {
   font-size: 25px;
 }
 
-.card-1 {
+.items-1 {
   background-image: url(mycard/1.jpg);
   border-radius: 10px;
   background-size: cover;
   background-position: center;
   padding: 1rem;
+  grid-column: span 2;
 }
 
-.card-2 {
+.items-2 {
   background-image: url(mycard/3.jpg);
   border-radius: 10px;
   background-size: cover;
@@ -65,7 +80,7 @@ body {
   padding: 1rem;
 }
 
-.card-3 {
+.items-3 {
   background-image: url(mycard/2.jpg);
   border-radius: 10px;
   background-size: cover;
@@ -73,7 +88,7 @@ body {
   padding: 1rem;
 }
 
-.card-4 {
+.items-4 {
   background-image: url(mycard/4.jpg);
   border-radius: 10px;
   background-size: cover;
@@ -81,7 +96,7 @@ body {
   padding: 1rem;
 }
 
-.card-5 {
+.items-5 {
   background-image: url(mycard/5.jpg);
   border-radius: 10px;
   background-size: cover;
@@ -89,7 +104,7 @@ body {
   padding: 1rem;
 }
 
-.card-6 {
+.items-6 {
   background-image: url(mycard/6.jpg);
   border-radius: 10px;
   background-size: cover;
@@ -97,38 +112,12 @@ body {
   padding: 1rem;
 }
 
-.card-7 {
+.items-7 {
   background-image: url(mycard/7.jpg);
   border-radius: 10px;
   background-size: cover;
   background-position: center;
   padding: 1rem;
-}
-
-.header {
-  padding-top: 3rem;
-  display: grid;
-  grid-template-areas:
-    'hero hero feature-1'
-    'hero-2 hero-2 feature-2';
-}
-
-.hero {
-  grid-area: hero;
-  min-height: 300px;
-  background-image: url(mycard/1.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 0rem;
-}
-
-.hero-2 {
-  grid-area: hero-2;
-  min-height: 300px;
-  background-image: url(mycard/2.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 0rem;
 }
 .box-blur {
   border-radius: 50px;
@@ -142,6 +131,9 @@ body {
   justify-content: center;
   width: 350px;
   height: auto;
+}
+.figure {
+  font-family: Nunito, sans-serif;
 }
 
 @media (max-width: 1820px) {
@@ -164,7 +156,18 @@ body {
   }
 }
 
+@media (max-width: 1240px) {
+  .container-1 {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
 @media (max-width: 1180px) {
+  .container-1 {
+    display: grid;
+    grid-template-columns: auto;
+  }
   .jumbotron {
     display: flex;
     flex-wrap: wrap;
@@ -177,12 +180,23 @@ body {
 }
 
 @media (max-width: 600px) {
+  .jumbotron p {
+    font-size: 15px;
+  }
+  .container-1 {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .row {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
   .box-blur {
     margin-left: 2rem;
     margin-right: 2rem;
   }
   .home-img {
-    width: 200px;
+    width: 310px;
   }
   .contact-box {
     background: none;
